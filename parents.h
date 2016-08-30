@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 class Parent{
 private:
@@ -38,23 +37,6 @@ void Parent:: setNames(){
     }
 }
 
-    /** std:: string Parent:: getNames(){
-        std:: vector <std::string> names;
-        int vector_len = names.size();
-        names.reserve(vector_len); //improve performance by reserving a fixed amount of memory
-
-        names.push_back(FirstName);
-        names.push_back(LastName);
-        names.push_back(Surname);
-        names.push_back(OtherName);
-
-        std::string FullNames;
-        while(!names.empty()){
-             FullNames += " "+ names.back();
-             names.pop_back();
-        }
-        return FullNames;
-    } **/
 
     std::string Parent::getFullNames(){
         std::string myfullNames = FirstName + " "  + LastName + " " + Surname + " " + OtherName;
